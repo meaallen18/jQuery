@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ratings</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+      #movie-list {
+        margin-top: 20px;
+      }
+      .movie {
+        margin: 10px 0;
+      }
+    </style>
+</head>
+<body>
+    <h1>Movie Ratings</h1>
+
+    <form id="movie-form">
+        <input type="text" id="title" placeholder="Title" required minlength="2">
+        <input type="number" id="rating" placeholder="Rating" min="0" max="10" required>
+        <button type="submit">Add Movie</button>
+    </form>
+
+    <button id="sort-title">Sort by Title</button>
+    <button id="sort-rating">Sort by Rating</button>
+
+    <div id="movie-list">
+    </div>
+    
+    <script src="movieJQ.js"></script>
+</body>
+</html>
